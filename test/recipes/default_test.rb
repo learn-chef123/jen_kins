@@ -29,3 +29,13 @@ end
 describe file('/opt/jenkins/jenkins.war') do
   it { should exist }
 end
+
+describe file('/etc/systemd/system/jenkins.service') do
+  it { should exist }
+end
+
+describe service('jenkins') do
+  it { should be_installed }
+  it { should be_enabled }
+  it { should be_running }
+end
