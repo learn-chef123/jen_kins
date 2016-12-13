@@ -20,3 +20,12 @@
 describe command('java -version') do
   its('exit_status') { should eq 0 }
 end
+
+describe package('wget') do
+  it { should be_installed }
+end
+
+
+describe file('/opt/jenkins/jenkins.war') do
+  it { should exist }
+end
