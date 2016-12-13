@@ -5,6 +5,7 @@ license 'all_rights'
 description 'Installs/Configures jen_kins'
 long_description 'Installs/Configures jen_kins'
 version '0.1.0'
+depends 'my_java', '~> 0.1.0'  
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link
